@@ -1,0 +1,3 @@
+jsSHA is a JavaScript/TypeScript implementation of the entire family of SHA hashes as defined in FIPS PUB 180-4, FIPS PUB 202, and SP 800-185 (SHA-1, SHA-224, SHA3-224, SHA-256, SHA3-256, SHA-384, SHA3-384, SHA-512, SHA3-512, SHAKE128, SHAKE256, cSHAKE128, cSHAKE256, KMAC128, and KMAC256) as well as HMAC as defined in FIPS PUB 198-1. jsSHA is also 100 % cross-browser compatible and works with Node.js.
+
+Source: https://caligatio.github.io/jsSHA/

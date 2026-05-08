@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>om-fingerprinter: FP-Demo Item 06</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}" type="text/css">
+
+    <meta name="author" content="Oldrich Molis">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="om-fingerprinter: FP-Demo Item 06">
+    <meta name="theme-color" content="#36393f">
+
+    {% include "partials/favicon.html" %}
+</head>
+<body>
+    {% include "partials/noscript.html" %}
+
+    {% include "partials/header.html" %}
+
+    <main class="main-fp-demo-items">
+        <div class="card">
+            <h3 class="center">Headset</h3>
+            <img src="{{ url_for('static', filename='images/tabler-icons-3.40.0/headset.svg') }}" alt="Image Headset" class="image-fp-demo-item">
+        </div>
+
+        <div class="card">
+            <h3>Description</h3>
+            <p class="text-align-left">This headset offers a balanced audio experience with a focus on comfort and usability. Designed for extended use, it delivers clear sound and reliable performance across different applications. Its ergonomic design ensures a comfortable fit throughout the day.</p>
+        </div>
+    </main>
+</body>
+</html>

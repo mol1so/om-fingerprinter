@@ -1,0 +1,37 @@
+/* No JavaScript */
+.no-js-container {
+    position: fixed;
+	z-index: 999998;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;    
+    background-color: #f5f7fa;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-js-container p {
+    z-index: 999999;
+    padding: 0 2rem;
+    color: #333;
+    text-align: center;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+/* Error */
+.error-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.error-container p {
+    padding: 0 2rem;
+    color: #333;
+	font-size: 1.1rem;
+	font-weight: bold;
+}

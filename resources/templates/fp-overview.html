@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>om-fingerprinter: FP-Overview</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}" type="text/css">
+
+    <meta name="author" content="Oldrich Molis">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="om-fingerprinter: FP-Overview">
+    <meta name="theme-color" content="#36393f">
+
+    {% include "partials/favicon.html" %}
+</head>
+<body>
+    {% include "partials/noscript.html" %}
+
+    {% include "partials/header.html" %}
+
+    <main>
+        <div class="card">
+            <h3>Fingerprint</h3>
+            <pre id="fpOutput1">Loading...</pre>
+        </div>
+
+        <div class="card">
+            <h3>Fingerprint Attributes</h3>
+            <pre id="fpOutput2">Loading...</pre>
+        </div>
+
+        <div class="card">
+            <h3>Canvas and WebGL Objects</h3>
+            <div><canvas id="om-fingerprinter-client-canvas">Loading...</canvas></div>
+            <div><canvas id="om-fingerprinter-client-webgl">Loading...</canvas></div>
+        </div>
+    </main>
+    
+    <script type="module" src="{{ url_for('static', filename='js/om-fingerprinter-client.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/fp-overview.js') }}"></script>
+</body>
+</html>
