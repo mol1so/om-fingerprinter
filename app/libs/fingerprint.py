@@ -35,14 +35,14 @@ def process_data_fingerprint(data):
 
     # Additional Hashes
     hash_webgl = hash_object([webgl_image, webgl_data]) # WebGL = WebGL Image + WebGL Data;
-    hash_main = hash_object({ # Main = User Fingerprint (Combination of All Fingerprint Attributes)
-        "hash_audio": hash_audio,
-        "hash_canvas": hash_canvas,
-        "hash_js_attributes": hash_js_attributes,
-        "hash_creen_resolution": hash_screen_resolution,
-        "hash_webgl_image": hash_webgl_image,
-        "hash_webgl_data": hash_webgl_data
-    })
+    hash_main = hash_object([ # Main = User Fingerprint (Combination of All Fingerprint Attributes)
+        hash_audio,
+        hash_canvas,
+        hash_js_attributes,
+        hash_screen_resolution,
+        hash_webgl_image,
+        hash_webgl_data
+    ])
 
     # Fingerprint Linking Algorithm
     # 1) Does the Newly Computed Fingerprint (hash_main) Already Exist in the Database?
